@@ -269,6 +269,23 @@ select {
     transform: scale(1.5);
 }
 
+.back-to-portfolio {
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    padding: .25rem 1rem;
+    margin: 1rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    color: var(--clr-white);
+    z-index: 9999;
+}
+
+.back-to-portfolio:hover,
+.back-to-portfolio:focus {
+    background: hsl( var(--clr-white) / 0.15);
+}
+
 /* primary-header */
 
 .logo {
@@ -303,7 +320,8 @@ select {
 }
 
 @supports (backdrop-filter: blur(1rem)) {
-    .primary-navigation {
+    .primary-navigation,
+    .back-to-portfolio {
         background: hsl( var(--clr-white) / 0.05);
         backdrop-filter: blur(1.5rem);
     }
